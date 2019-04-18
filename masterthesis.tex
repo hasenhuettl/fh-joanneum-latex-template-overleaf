@@ -1,0 +1,59 @@
+% =====================================================
+% Latex template for ma
+% =====================================================
+
+% documentclass
+\documentclass[final, a4paper, oneside, fontsize=12]{scrbook}
+
+% =====================================================
+% Thesis settings
+% =====================================================
+\def \title{Implementation of a Data Management Process in context of Smart City Applications}
+\def \subtitle{}
+\def \yourName{Stefan Leitner, BSc.}
+\def \yourPlace{Graz}
+\def \submissionYear{2019}
+\def \yourSupervisor{FH-Prof. Dipl.-Ing. Dr.techn. Peter Salhofer} 
+\def \yourLanguage{english} % options: german, english
+
+% Carlito (Unix) or Calibri as default font
+\def \defaultFont{Carlito}
+
+% =====================================================
+% include preamble settings
+% =====================================================
+\include{chapters/00_preamble}
+
+% =====================================================
+% Thesis structure - chapter includes
+% =====================================================
+\ifthenelse{\equal{\yourLanguage}{english}}{
+  \begin{document}\selectlanguage{english}
+}{
+  \begin{document}\selectlanguage{ngerman}
+}
+\sloppy
+% coverpage
+\include{chapters/01_coverpage}
+% pagestyle
+\pagestyle{headings}
+
+\frontmatter
+\include{chapters/02_declaration}
+\tableofcontents 
+\listoffigures
+\include{chapters/03_abbreviations}
+\include{chapters/04_abstract}
+
+% content
+\mainmatter
+\include{chapters/05_introduction}
+\include{chapters/06_another_chapter}
+
+\backmatter
+% BibTex
+\bibliographystyle{plain} 
+\bibliography{chapters/90_bibtex}
+
+\end{document}
+% =====================================================

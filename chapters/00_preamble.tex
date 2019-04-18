@@ -1,0 +1,89 @@
+%****************************************
+% 00_preamble
+%****************************************
+
+% import Latex packages
+\usepackage{ifthen}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+
+% Mathematikpaket
+\usepackage{amsmath}
+% für die Auswahl von Schriften
+\usepackage{fontspec}
+% language packages
+\usepackage[english, ngerman]{babel}
+\usepackage{blindtext}
+% für spezifisches Layout 
+\usepackage{geometry}
+\usepackage{layout}
+\usepackage{setspace}
+% erweiterte Möglichkeiten für die Positionierung von Bildern, Tabellen, ..
+\usepackage{float}
+% Blocksatz verbessern bei pdf Erzeugung
+\usepackage{microtype} 	
+% Kapitelüberschrift bei Querverweisen anzeigen
+\usepackage{nameref}
+% Ermöglichen, Grafiken nebeneinander und innerhalb einer Grafik zu platzieren
+\usepackage{subfig}				
+% Einfügen von PDF Dateien
+\usepackage{pdfpages}
+% Anmerkungen im Text
+\usepackage{todonotes}
+% für Code
+\usepackage{listings}
+% für Tabellen
+\usepackage{array}
+% Farbdefinitionen
+\usepackage{color}
+% PDF
+\usepackage[unicode=true,pdfusetitle,
+bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+breaklinks=true,pdfborder={0 0 1},backref=false,colorlinks=true]
+{hyperref}
+
+% kleinere Überschriften
+\KOMAoptions{headings=small}
+% Konfiguration des Inhaltsverzeichnisses
+\KOMAoptions{toc=listof}
+\KOMAoptions{toc=bib}
+
+% Kein Einrücken der ersten Zeile eines Absatzes, dafür
+% kleiner Abstand zwischen den Absätzen
+\setlength{\parskip}{\smallskipamount}
+\setlength{\parindent}{0pt}
+
+% keine Einrückung der Texte bei Bildunterschriften
+\usepackage{caption} 
+\captionsetup{format=plain} 
+
+\makeatletter
+
+% Alle Nummerierungen kapitelweise (chapter)
+\numberwithin{figure}{chapter}
+\numberwithin{equation}{chapter}
+\numberwithin{table}{chapter}
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+
+% Aktuelles Datum initialisieren (falls benötigt)
+\@ifundefined{date}{}{\date{}}
+
+\makeatother
+
+% Definition der Ränder
+\geometry{paperheight=297mm, 
+	paperwidth=210mm,
+	top=25mm,
+	textwidth=155mm,
+	textheight=252mm,
+	right=25mm,
+	heightrounded,
+	headheight=5mm,
+	headsep=10mm,
+	foot=15mm,
+	marginparsep=0mm,
+	marginparwidth=20mm
+}

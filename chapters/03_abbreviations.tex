@@ -1,0 +1,13 @@
+\ifthenelse{\equal{\yourLanguage}{english}}{
+  \chapter*{Abbreviations}
+  \addcontentsline{toc}{chapter}{Abbreviations}
+}{
+  \chapter*{Abkürzungsverzeichnis}
+  \addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+}
+
+\begin{tabular*}{14.5cm}{@{\extracolsep{\fill}}>{\raggedright}m{3cm}>{\raggedright}m{14cm}}
+ & \tabularnewline
+k8s & Kubernetes\tabularnewline
+lol & laughing out loud\tabularnewline
+\end{tabular*}

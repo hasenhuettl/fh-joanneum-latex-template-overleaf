@@ -1,0 +1,75 @@
+\chapter[Introduction]{Introduction}
+
+\section{Section}
+
+\blindtext
+
+Here is a text example with a footnote to my github account "loete (Stefan Leitner)“\footnote{\url{https://github.com/loete}}. It is also possible to link within the text \emph{github.com} (\url{http://www.github.com})
+
+\section{Another section}
+\label{AnotherSection}
+
+These sections covers some formatting examples like:
+
+\begin{itemize}
+	\item \emph{emphasized item}
+	\item another item
+	\item a reference to Image~\ref{fig:Rick}	
+	\begin{itemize}
+		\item one more
+		\item item
+	\end{itemize}
+\end{itemize}
+
+\blindtext
+
+% Die Position wurde hier mit H erzwungen
+% besser ist es, Latex in einem gewissen Rahmen entscheiden zu lassen
+\begin{figure}[htb]
+  \centering
+   \includegraphics[width=0.8\textwidth]{resources/rick.png}
+   \caption{It's Rick}
+   \label{fig:Rick}
+\end{figure}
+
+\blindtext
+
+\blindtext
+
+It is also possible to create \texttt{Tables} and reference to them like Table~\ref{tab:Table}.
+
+\section{Yet another section}
+
+\blindtext 
+
+\subsection{A subsection}
+
+\blindtext 
+
+\begin{table}[htb]
+	\centering
+	\caption{Table title}\smallskip
+	\begin{tabular}{|l|c|c|} \hline
+		Header col 1 & col2 & col3 \\ \hline
+		row1 &x &\\ \hline
+		row2 &x &\\ \hline
+		row3 &&x\\ \hline
+		row4 &x &\\ \hline
+		row5 &&x\\ \hline
+		row6 &&x\\ \hline
+		row7 &x &\\ \hline
+		row8 &&x\\ \hline
+		row9 &&x\\ \hline
+		row10 &x &\\ \hline
+		row11 &x &\\ \hline
+		row12 &&x\\ \hline
+	\end{tabular}
+	\label{tab:Table}
+\end{table}
+
+\blindtext
+\blindtext
+
+\subsection{Another subsection}
+
+\blindtext

@@ -1,0 +1,62 @@
+\chapter{Ausgewählte Formatierungsbeispiele}
+
+\section{Ein nummerierter Abschnitt}
+
+\subsection{Ein nummerierter Unterabschnitt}
+
+\subsubsection{Ein nummerierter Unterunterabschnitt}
+
+Welche Überschriftenebenen nummeriert werden wird mittels \texttt{secnumdepth} festgelegt.
+
+\subsubsection{Ein nummerierter Unterunterabschnitt}
+
+Jede Gliederungsebene muss zumindest zweimal vorkommen. Dies ist \textbf{fett}, \textit{kursiv}, \underline{unterstrichen} oder \texttt{Schreibmaschine}.
+
+\section{Mathematik}
+
+Im Ortsraum ergibt sich der eindimensionale Hertzvektor $\Phi_A(\vec{r})$ für das gesamte Teilchengitter zu
+
+\begin{equation}
+\Phi_A(\vec{r})=\sum_m\sum_n\exp\left( i\left[ k_x^imd+k_y^ind\right] \right) \Phi\left( \vec{r}-\vec{r}_{mn}\right)
+\end{equation}
+
+\section{Code}
+
+Es gibt mehrere Möglichkeiten Code professionell darzustellen; hier mittels des \LaTeX-Paketes \texttt{Listings}. Die Gestaltungsmöglichkeiten sind umfangreich.
+
+\lstdefinestyle{customerlang}{
+	belowcaptionskip=1\baselineskip,
+	breaklines=true,
+	frame=L,
+	xleftmargin=\parindent,
+	language=erlang,
+	showstringspaces=false,
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+}
+
+\lstset{language=erlang, style=customerlang}
+
+\begin{lstlisting}[caption=Das übliche 'Hello World' Spektakel -- diesmal in Erlang.]
+-module(hello).
+-export([start/0]).
+
+start() ->
+	io:format("Hello world~n").
+\end{lstlisting}
+
+\section{Literaturverweise}
+
+Keine Masterarbeit ohne Quellenangaben \ldots. 
+
+Die Referenzen werden in eine \textsc{Bib}\TeX Datei ausgelagert. Diese kann mit einem beliebigen Texteditor, oder mit spezifischen Editoren erstellt werden (Literaturverwaltung).
+
+Eine Referenz auf einen Artikel in einem Journal~\cite{Brand:1983vx}, auf ein Buch~\cite{Weske:2012ul}, auf ein Buchkapitel in einem Herausgeberband~\cite{singer2015}, sowie auf einen Beitrag in einem Konferenzband~\cite{Singer:2016hl} (Proceedings).
+
+\section{Querverweise}
+
+Ein Verweis auf eine Abbildung ist im Abschnitt~\ref{AnotherSection} und ein Verweis auf eine Tabelle ist im Abschnitt~\ref{AnotherSection} zu finden.
+
