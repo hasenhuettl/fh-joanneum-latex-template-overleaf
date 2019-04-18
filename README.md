@@ -15,6 +15,6 @@ Build document with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>b</kbd>.
 
 Auto-Build `onFileChange` is enabled via `.vscode/settings.json`
 
-Checkout [latex-workshop wiki](https://github.com/James-Yu/LaTeX-Workshop/wiki) for more settings
+Checkout [latex-workshop wiki](https://github.com/James-Yu/LaTeX-Workshop/wiki) for more settings.
 
 
