@@ -1,5 +1,5 @@
 # fh-joanneum-latex-template-vscode
-Latex Template for Master Thesis at the Master Program Information Management of FH JOANNEUM Graz. Includes `.vscode` settings for writing thesis with Visual Studio Code.
+Latex Template for Master Thesis at the Master Program Information Management of FH JOANNEUM Graz. Includes `.vscode` settings for Visual Studio Code.
 ## Prerequisites
 - TexLive installed
 - vsCode with extensions
