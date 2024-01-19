@@ -44,7 +44,15 @@
 \tableofcontents 
 \listoffigures
 \include{chapters/03_abbreviations}
-\include{chapters/04_abstract}
+\ifthenelse{\equal{\yourLanguage}{english}}{
+  \include{chapters/04_abstract}
+  \include{chapters/04_kurzfassung}
+  \selectlanguage{english}
+}{
+  \include{chapters/04_kurzfassung}
+  \include{chapters/04_abstract}
+  \selectlanguage{ngerman}
+}
 
 % content
 \mainmatter

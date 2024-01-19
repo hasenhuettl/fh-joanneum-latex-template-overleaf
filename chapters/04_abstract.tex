@@ -1,18 +1,4 @@
-{\ifthenelse{\equal{\yourLanguage}{english}}{
-  \chapter*{Abstract}
-}{
-  \chapter*{Kurzfassung}
-}
-% text
-\blindtext
-
-\ifthenelse{\equal{\yourLanguage}{english}}{
-  \begin{otherlanguage}{ngerman}
-  \chapter*{Kurzfassung}
-}{
-  \begin{otherlanguage}{english}
-  \chapter*{Abstract}
-}
-% text
-\blindtext
-\end{otherlanguage}}
+\selectlanguage{english}
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+English abstract...........
