@@ -49,6 +49,18 @@ breaklinks=true,pdfborder={0 0 1},backref=false,colorlinks=true]
 \KOMAoptions{toc=listof}
 \KOMAoptions{toc=bib}
 
+% --- Imports the biblatex package
+% For sorting options refer to https://tex.stackexchange.com/a/51439
+\usepackage{csquotes}
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=none
+]{biblatex}
+\addbibresource{chapters/articles.bib}
+\addbibresource{chapters/books.bib}
+\addbibresource{chapters/online.bib}
+
 % Carlito (Unix) or Calibri as default font
 \setmainfont{\defaultFont{}}
 
