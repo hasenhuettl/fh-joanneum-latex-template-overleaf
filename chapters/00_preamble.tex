@@ -39,9 +39,14 @@
 \usepackage{color}
 % PDF
 \usepackage[unicode=true,pdfusetitle,
-bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
-breaklinks=true,pdfborder={0 0 1},backref=false,colorlinks=true]
-{hyperref}
+  bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+  breaklinks=true,pdfborder={0 0 1},backref=false,colorlinks=true
+]{hyperref}
+\hypersetup{
+  linkcolor=black, % set the color for internal links
+  citecolor=black, % set the color for citation links
+  urlcolor=blue    % set the color for URLs
+}
 
 % kleinere Überschriften
 \KOMAoptions{headings=small}
