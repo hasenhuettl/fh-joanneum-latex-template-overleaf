@@ -6,8 +6,8 @@
   \addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
 }
 
-\begin{tabular*}{14.5cm}{@{\extracolsep{\fill}}>{\raggedright}m{3cm}>{\raggedright}m{14cm}}
- & \tabularnewline
-k8s & Kubernetes\tabularnewline
-lol & laughing out loud\tabularnewline
-\end{tabular*}
+% Make sure the acronyms are consistent lower OR upper case, otherwise sorting is like: A-C-D-b
+\begin{itemize}
+\DTLforeach*{acronyms}{\thisAcronym=Acronym,\thisDesc=Description}%
+  {\item[] \textbf{\makebox[2.5cm][l]{\parbox[t]{2.5cm}{\thisAcronym}}} \thisDesc}%
+\end{itemize}

@@ -54,6 +54,12 @@
 \KOMAoptions{toc=listof}
 \KOMAoptions{toc=bib}
 
+% --- Creating the acronym page
+\usepackage{datatool}
+\DTLloaddb{acronyms}{chapters/90_acronyms.csv}
+
+\DTLsort{Acronym}{acronyms}
+
 % --- Imports the biblatex package
 % For sorting options refer to https://tex.stackexchange.com/a/51439
 \usepackage{csquotes}
@@ -62,9 +68,7 @@ backend=biber,
 style=numeric,
 sorting=none
 ]{biblatex}
-\addbibresource{chapters/articles.bib}
-\addbibresource{chapters/books.bib}
-\addbibresource{chapters/online.bib}
+\addbibresource{chapters/95_biblatex.bib}
 
 % Carlito (Unix) or Calibri as default font
 \setmainfont{\defaultFont{}}
