@@ -5,6 +5,11 @@ This project is intended for and tested in Overleaf. Check out the initial proje
 
 This fork builds on the initial project for adjustments, error fixes and improvements in structure and imported packages.
 
+## Use correct Compiler!
+- Open the project in Overleaf
+- Click on Menu
+- Under Settings set Compiler to "LuaLaTex"
+
 ## My citation workflow
 This is the citation workflow that worked the best for me and I would recommend when working with Overleaf. However, this is by far not the only method, and should just be a suggestion for those who are just starting with overleaf and struggling with citations (like I was).
 
