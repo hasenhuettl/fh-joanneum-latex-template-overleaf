@@ -7,7 +7,9 @@
 }
 
 % Make sure the acronyms are consistent lower OR upper case, otherwise sorting is like: A-C-D-b
+% Makebox is space between start of abbreviations until start of descriptions
+% Parbox is space between start of abbreviations until end of abbreviations
 \begin{itemize}
-\DTLforeach*{acronyms}{\thisAcronym=Acronym,\thisDesc=Description}%
-  {\item[] \textbf{\makebox[2.5cm][l]{\parbox[t]{2.5cm}{\thisAcronym}}} \thisDesc}%
+\DTLforeach*{abbreviations}{\thisAcronym=Abbreviation,\thisDesc=Description}%
+  {\item[] \textbf{\makebox[2.5cm][l]{\parbox[t]{2.3cm}{\thisAcronym}}} \thisDesc}%
 \end{itemize}
