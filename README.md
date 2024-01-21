@@ -1,5 +1,5 @@
 # fh-joanneum-latex-template-overleaf
-Latex Template for Master Thesis at the Master Program Information Management of FH JOANNEUM Graz. 
+Latex Template for writing a Master Thesis in LaTeX for the Master Program Information Management at FH JOANNEUM Graz. 
 
 This project is intended for and tested in Overleaf. Check out the initial project from [Stefan Leitner](https://github.com/stfnltnr/fh-joanneum-latex-template-vscode/tree/master) for VS Code extensions.
 
