@@ -56,9 +56,7 @@
 
 % --- Creating the acronym page
 \usepackage{datatool}
-\DTLloaddb{abbreviations}{chapters/90_abbreviations.csv}
-
-\DTLsort{Abbreviation}{abbreviations}
+\usepackage[printonlyused]{acronym}
 
 % --- Insert pagebreaks if there is not enough space for new sections
 \usepackage{needspace}

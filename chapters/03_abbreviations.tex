@@ -6,10 +6,9 @@
   \addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
 }
 
-% Make sure the acronyms are consistent lower OR upper case, otherwise sorting is like: A-C-D-b
-% Makebox is space between start of abbreviations until start of descriptions
-% Parbox is space between start of abbreviations until end of abbreviations
-\begin{itemize}
-\DTLforeach*{abbreviations}{\thisAcronym=Abbreviation,\thisDesc=Description}%
-  {\item[] \textbf{\makebox[2.5cm][l]{\parbox[t]{2.3cm}{\thisAcronym}}} \thisDesc}%
-\end{itemize}
+% Only used acronyms are included
+\begin{acronym}[Acronyms]
+  \acro{K8S}{Kubernetes}
+  \acro{LOL}{Laughing out loud}
+  %etc...
+\end{acronym}
